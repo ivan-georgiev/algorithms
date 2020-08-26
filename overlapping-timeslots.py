@@ -17,13 +17,13 @@ def max_timeslots(st_times: int, end_times: int) -> int:
     # sort by endtime, inc
     timeslots.sort(key=lambda ts: ts[1])
 
-    # next timeslot is with endtime and starttime after those of the current
+    # next timeslot is with starttime after endtime of the current
     cslot = timeslots[0]
     max = 1
     for ts in timeslots[1:]:
-        if ts[1] > cslot[1] and ts[0] >= cslot[1]:
+        if ts[0] >= cslot[1]:
             cslot = ts
-            max = max +1
+            max += 1
     
     return max
 
