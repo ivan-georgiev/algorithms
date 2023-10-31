@@ -1,0 +1,11 @@
+- Base Infra with Terraform
+- AKS cluster with Terraform, get data from BaseInfra not by state file
+- Setup ArgroCD with GitHub private repo
+- Helm Chart with some app, deploy to cluster
+- Simulate two environments by namespaces
+- Extend deployment with parametrization
+- Setup Crossplane to provision app-level resources
+
+AKS:
+- IAM identity per POD
+
